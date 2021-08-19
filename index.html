@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script>
+function myfunction(){
+let name = document.getElementById("name").value;
+document.getElementById("name1").value = name;
+
+let mname = document.getElementById("mname").value;
+document.getElementById("mname1").value = mname;
+
+ let fname = document.getElementById("fname").value;
+ document.getElementById("fname1").value = fname;
+ 
+ let email = document.getElementById("email").value;
+ document.getElementById("email1").value = email;
+ 
+ let MobileNo = document.getElementById("number").value;
+ document.getElementById("MobileNo1").value = MobileNo;
+ 
+ let dob = document.getElementById("dob").value;
+document.getElementById("dob1").value = dob;
+
+let dropdown = document.getElementById("dropdown").value;
+document.getElementById("dropdown1").value = dropdown;
+
+let address = document.getElementById("address").value;
+document.getElementById("address1").value = address;
+
+let pincode = document.getElementById("idpincode").value;
+document.getElementById("idpincode1").value = pincode;
+
+let hobbies = document.getElementById("hobbies").value;
+document.getElementById("hobbies1").value = hobbies;
+
+}
+ </script>
+
+  <body>
+  <h1> Student Form </h1>
+     
+<div id="form-outer">
+  <p id="description">
+    To know the details of students
+  </p>
+  <form id="survey-form" method="GET" action="">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">First Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your First name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="mname-label" for="mname">Middle Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="mname" id="mname" class="input-field" placeholder="Enter your Middle Name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="fname-label" for="fname">Last Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="fname" id="fname" class="input-field" placeholder="Enter your Last name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="MobileNo">Mobile No: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="MobileNo" id="number"  class="input-field" required placeholder="Mobile No">
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="dob-label" for="dob">D.O.B: </label>
+      </div>
+      <div class="rightTab">
+        <input type="date" name="dob" id="dob" class="input-field" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="department">Department: </label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="department" class="dropdown">
+        <option disabled value>Select an option</option>
+        <option value="select">select</option>
+        <option value="BE">BE</option>
+        <option value="B.TECH">B.TECH</option>
+        <option value="M.TECH">M.TECH</option>
+        <option value="MBA">MBA</option>
+        <option value="BSC">BSC</option>
+        <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="gender">Gender: </label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label><input name="radio-buttons" value="male"  type="radio" class="userRatings" >Male</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="female"  type="radio" class="userRatings" >Female</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="others"  type="radio" class="userRatings" >Others</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="address">Address: </label>
+      </div>
+      <div class="rightTab">
+        <textarea id="address" class="input-field" style="height:50px;resize:vertical;" name="address" placeholder="Enter your address here..."></textarea>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="pincode">Pincode: </label>
+      </div>
+      <div class="rightTab">
+       <input type="number" name="pincode" id="idpincode" class="input-field" style="height:20px;resize:vertical;" placeholder="6 - - - - -"></div>
+    </div>
+    
+       <div class="rowTab">
+      <div class="labels">
+        <label for="Hobbies">Hobbies: </label>
+      </div>
+      <div class="rightTab">
+        <ul id="hobbies" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="Singing" type="checkbox" class="userRatings">Singing</label></li>
+          <li class="checkbox"><label><input name="prefer" value="Cricket" type="checkbox" class="userRatings">Cricket</label></li>
+          <li class="checkbox"><label><input name="prefer" value="writing" type="checkbox" class="userRatings">writing</label></li>
+          <li class="checkbox"><label><input name="prefer" value="Badminton" type="checkbox" class="userRatings">Badminton</label></li>
+          <li class="checkbox"><label><input name="prefer" value="Others" type="checkbox" class="userRatings">others</label></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+    
+    <a onclick = "myfunction()" id="submit" type="submit">Submit</a>
+    <button id="reset" type="reset">Reset</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <h1> Submitted Form</h1>
+     
+<div id="form-outer">
+  <p id="description">
+    To know the details of students
+  </p>
+  <form id="survey-form" method="GET" action="">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">First Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name1" id="name1" class="input-field" placeholder="Enter your First name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="mname-label" for="mname">Middle Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="mname1" id="mname1" class="input-field" placeholder="Enter your Middle Name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="fname-label" for="fname">Last Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="fname1" id="fname1" class="input-field" placeholder="Enter your Last name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email1" id="email1" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="MobileNo1">Mobile No: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="MobileNo1" id="MobileNo1" class="input-field" placeholder="Mobile No" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="dob-label" for="dob">D.O.B: </label>
+      </div>
+      <div class="rightTab">
+        <input type="date" name="dob1" id="dob1" class="input-field" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="department">Department: </label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown1" name="department" class="dropdown1">
+        <option disabled value>Select an option</option>
+        <option value="select">select</option>
+        <option value="BE">BE</option>
+        <option value="B.TECH">B.TECH</option>
+        <option value="M.TECH">M.TECH</option>
+        <option value="MBA">MBA</option>
+        <option value="BSC">BSC</option>
+        <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="gender">Gender: </label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label><input name="radio-buttons" value="male"  type="radio" class="userRatings" >Male</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="female"  type="radio" class="userRatings" >Female</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="others"  type="radio" class="userRatings" >Others</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="address">Address: </label>
+      </div>
+      <div class="rightTab">
+        <textarea id="address1" class="input-field" style="height:50px;resize:vertical;" name="address" placeholder="Enter your address here..."></textarea>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="pincode">Pincode: </label>
+      </div>
+      <div class="rightTab">
+       <input type="number" name="pincode" id="idpincode1" class="input-field" style="height:20px;resize:vertical;" placeholder="6 - - - - -"></div>
+    </div>
+    
+       <div class="rowTab">
+      <div class="labels">
+        <label for="Hobbies">Hobbies: </label>
+      </div>
+      <div class="rightTab">
+        <ul id="hobbies1" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="Singing" type="checkbox" class="userRatings">Singing</label></li>
+          <li class="checkbox"><label><input name="prefer" value="Cricket" type="checkbox" class="userRatings">Cricket</label></li>
+           <li class="checkbox"><label><input name="prefer" value="writing" type="checkbox" class="userRatings">writing</label></li>
+          <li class="checkbox"><label><input name="prefer" value="Badminton" type="checkbox" class="userRatings">Badminton</label></li>
+          <li class="checkbox"><label><input name="prefer" value="Others" type="checkbox" class="userRatings">others</label></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+    
+  
+  </form>
+</div>
+
+
+</main>
+<footer></footer>
+</body>
+</html>
+
+
+
+
+
